@@ -14,6 +14,13 @@ $(call inherit-product, device/xiaomi/chime/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# ETHEREAL Official Stuff
+ETHEREAL_BUILD_TYPE := OFFICIAL
+ETHEREAL_MAINTAINER := Nothing
+
+# Boot Animation
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_chime
 PRODUCT_DEVICE := chime
